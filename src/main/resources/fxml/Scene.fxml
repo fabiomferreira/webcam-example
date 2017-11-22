@@ -25,12 +25,13 @@
             </HBox>
             <HBox prefHeight="410.0" prefWidth="800.0">
                <children>
+                  <Region prefHeight="343.0" prefWidth="113.0" />
                   <ImageView fx:id="webcam_picture" fitHeight="340.0" fitWidth="340.0" pickOnBounds="true" preserveRatio="true" />
                   <Region prefHeight="343.0" prefWidth="113.0" />
                   <StackPane>
                      <children>
-                        <ImageView fx:id="imgWebCamCapturedImage" fitHeight="250.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView fitHeight="250.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 1.0;">
+                        <ImageView fx:id="imgWebCamCapturedImage" fitHeight="340.0" fitWidth="340.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="340.0" fitWidth="340.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 1.0;">
                            <image>
                               <Image url="@../styles/mask.png" />
                            </image>

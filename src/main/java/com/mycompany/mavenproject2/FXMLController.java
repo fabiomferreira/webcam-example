@@ -82,7 +82,7 @@ public class FXMLController implements Initializable {
                                 @Override
                                 public void run() {
                                     final Image mainiamge = SwingFXUtils
-                                        .toFXImage(grabbedImage, null);
+                                        .toFXImage(grabbedImage.getSubimage(360, 0, 540, 720), null);
                                     imageProperty.set(mainiamge);
                                 }
                             });
