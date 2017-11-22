@@ -1,0 +1,10 @@
+.button {
+    -fx-font-weight: bold;
+}
+
+.bg {
+    -fx-background-image: url("mask.png");
+    -fx-opacity: 100000000;
+    -fx-background-repeat: stretch;   
+    -fx-background-size: cover;
+}

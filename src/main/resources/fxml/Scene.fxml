@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" minHeight="200.0" minWidth="320.0" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mavenproject2.FXMLController">
+    <children>
+      <VBox prefHeight="200.0" prefWidth="320.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="41.0" prefWidth="800.0">
+               <children>
+                  <Region prefHeight="25.0" prefWidth="532.0" />
+                  <Label prefHeight="17.0" prefWidth="126.0" text="Selecione a camera" />
+                  <ComboBox fx:id="cameraOptions" prefWidth="150.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="410.0" prefWidth="800.0">
+               <children>
+                  <ImageView fx:id="webcam_picture" fitHeight="340.0" fitWidth="340.0" pickOnBounds="true" preserveRatio="true" />
+                  <Region prefHeight="343.0" prefWidth="113.0" />
+                  <StackPane>
+                     <children>
+                        <ImageView fx:id="imgWebCamCapturedImage" fitHeight="250.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="250.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 1.0;">
+                           <image>
+                              <Image url="@../styles/mask.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" text="Voltar" />
+                  <Region prefHeight="33.0" prefWidth="330.0" />
+                    <Button fx:id="button" onAction="#handleButtonAction" text="Tirar Foto" />
+                  <Region prefHeight="33.0" prefWidth="303.0" />
+                  <Button mnemonicParsing="false" text="Seguir" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+    </children>
+</AnchorPane>
